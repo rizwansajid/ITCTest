@@ -20,6 +20,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "com.2bvision.itc"
         version   = "3.0">
+  <preference name="phonegap-version" value="3.0.0" />
     <name>InTouch Communicator</name>
 
     <description>
