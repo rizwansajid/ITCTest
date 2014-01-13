@@ -102,8 +102,8 @@ initPushwoosh();
                             var username = prod.FirstName + " " + prod.LastName;
                             $.ajax({
                                 type: "POST",
-                                //url: "http://projectxmobile.2bvision.com/Webservice.asmx/GetSchools_SchoolCodeWise",
-                                url: "Webservice.asmx/GetSchools_SchoolCodeWise",
+                                url: "http://projectxmobile.2bvision.com/Webservice.asmx/GetSchools_SchoolCodeWise",
+                                //url: "Webservice.asmx/GetSchools_SchoolCodeWise",
                                 data: "{'strSchoolCode': '" + prod.SchoolCode + "'}",
                                 contentType: "application/json; charset=utf-8",
                                 dataType: "json",
