@@ -18,19 +18,19 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.9.0">
+        id        = "com.2bvision.itc"
+        version   = "3.0">
     <name>InTouch Communicator</name>
 
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
+    <author href="http://intouchcommunicator.com" email="rizwan.2bv@gmmail.com">
+        Rizwan
     </author>
 
-    <access origin="*"/>
+   <access origin="*.pushwoosh.com" />
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
@@ -110,6 +110,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage"/>
     </feature>
+  <feature name="PushNotification">
+    <param name="ios-package" value="PushNotification" />
+  </feature>
     <!-- Deprecated plugins element. REmove in 3.0 -->
     <plugins>
     </plugins>

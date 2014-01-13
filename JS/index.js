@@ -18,16 +18,16 @@
  */
  
  function initPushwoosh() {
-     alert("initpushwoosh invoked.");
+    // alert("initpushwoosh invoked.");
 	var pushNotification = window.plugins.pushNotification;
-     alert("push notii: "+pushNotification);
+    // alert("push notii: "+pushNotification);
 	pushNotification.onDeviceReady();
-     alert("device ready...");
+    // alert("device ready...");
 	pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"3913D-FBE0C", appname:"ITC"},
 									function(status) {
-                                    alert(status);
+                                   // alert(status);
 										var deviceToken = status['deviceToken'];
-                                    alert("Device Token"+deviceToken);
+                                    //alert("Device Token"+deviceToken);
 										console.warn('registerDevice: ' + deviceToken);
 									},
 									function(status) {
